@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+      <meta charset="UTF-8">
         <title>Minh không đúng </title>
-        <link rel="stylesheet" href="https://fontawesome.com/">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="themify-icons/themify-icons.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    </head>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      </head>
     <body>
 
         <!-- BOOTSTRAP___HEADER___-->      
@@ -22,13 +27,21 @@
                   <a class="nav-link active" aria-current="page" href="#Home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#header-ctent">Describe</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="#content-about">About me</a>
                 </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Describe
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#header-ctent">Places to go</a></li>
+                    <li><a class="dropdown-item" href="food.html">Food</a></li>
+                  </ul>
+                </li>
               </ul>
+              <!---->
               
+              <!---->
             </div>
           </div>
         </nav>
@@ -42,7 +55,7 @@
 
         <div class="slide-img" id="one">
           <img src="https://vcdn1-dulich.vnecdn.net/2019/07/27/viet-nam-nhin-tu-tren-cao-vnexpress-4-1564197079.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=qtv_8GXwr4rIW1VBz7QTGQ" alt="">
-          <div class="describe-img">Khám phá đất nước Việt Nam</div>
+          <div class="describe-img ">Khám phá đất nước Việt Nam</div>
         </div>
         <div class="slide-img" id="two">
           <img src="https://cdn.pixabay.com/photo/2020/04/30/14/03/mountains-and-hills-5112952__480.jpg" alt="">
@@ -68,9 +81,9 @@
           <h1>Bạn muốn tìm 1 nơi du lịch tại Việt Nam</h1>
         </div>
         <div class="main-content">
-          <div class="img-content">
+          <a href="https://www.dulichhalong.net/" class="img-content" target="_blank">
             <img src="https://toplist.vn/images/800px/vinh-ha-long-quang-ninh-16081.jpg" alt="">
-          </div>
+          </a>
           <div class="describe-content">
             <h2>Vịnh Hạ Long</h2>
             <p>
@@ -85,9 +98,9 @@
             </div>
           </div>
 
-          <div class="img-content">
+          <a href="https://www.quangbinhtravel.vn/tour/kham-pha-phong-nha-ke-bang-2-ngay-1-dem" class="img-content" target="_blank">
             <img src="http://justgo.vn/wp-content/uploads/2020/06/dong-phong-nha.png" alt="">
-          </div>
+          </a>
           <div class="describe-content">
             <h2>Động Phong Nha- Kẻ Bàng</h2>
             Con người thân thương, hiếu khách nhẹ nhàng, thu hút. Thiên nhiên ban tặng với bầu trời xanh ngát, mây trắng, màu sắc tự nhiên đa dạng từ các con động tạo nên sức hút.
@@ -99,9 +112,9 @@
             </div>
           </div>
 
-          <div class="img-content">
+          <a href="https://www.vietnambooking.com/du-lich/tour-du-lich/du-lich-hoi-an.html" class="img-content" target="_blank">
             <img src="http://justgo.vn/wp-content/uploads/2020/06/pho-co-hoi-an.png" alt="">
-          </div>
+          </a>
           <div class="describe-content">
             <h2>Phố cổ Hội An</h2>
             Hội an là danh lam thắng cảnh top 10 đẹp nhất Việt Nam với tên gọi là Phố cổ Hội An. Xây dựng với kiến trúc cổ kính nên tạo cảm giác hoài cổ khi đến thăm. Không thể bỏ qua những món ăn Hội An, dạo ngắm phố phường sẽ bắt gặp những chiếc đèn lồng trước các khu cửa kính. Kiến trúc cổ kinh , còn lưu giữ nền tàng văn hóa phi vật thể đồ sộ.
@@ -110,7 +123,30 @@
             *****
           </div>
           </div>
+
+          <a href="https://travel.com.vn/mien-bac/tour-ho-hoan-kiem.aspx" class="img-content" target="_blank">
+            <img src="https://images.foody.vn/res/g11/105336/prof/s576x330/foody-mobile-hg1-jpg-461-635536304148850274.jpg" alt="">
+          </a>
+          <div class="describe-content">
+            <h2>Hồ Hoàn Kiếm</h2>
+            Hồ Hoàn Kiếm (hay còn gọi là Hồ Gươm) là trái tim của Hà Nội. 
+            Đây không chỉ là nơi để mọi người thả hồn đi dạo, hóng mát mà còn gắn liền với người dân thủ đô về nhiều phương diện lịch sử văn hóa cũng như đi vào trong thơ ca.
+            Hồ Hoàn Kiếm là nơi tụ hội, điểm hẹn lý tưởng bốn mùa: Rực rỡ trong sắc đào và các lễ hội truyền thống vào mùa xuân; lồng lộng những cơn gió xua tan đi cái nóng oi bức của mùa hè; 
+            say đắm với những cành liễu rủ trong màn sương huyền ảo của mùa thu; lộng lẫy trong cơn mưa lá vàng và những giọt mưa phùn lất phất bay của mùa đông.
+            <div>
+              *****
+            </div>
+          </div>
+          <hr>
+         
+
+          <div class="describe-content bonus">
+            <h2 style="color: rgb(62, 29, 211); display: block; animation: fadeUp 1.5s linear forwards  alternate infinite;
+            animation-delay: .9s; font-weight: 900;">
+            Coming soon</h2>
+          </div>
         </div>
+       
         <div id="content-about">
           <h1 class="header-about">About me</h1>
           <div class="about-me">
@@ -135,6 +171,7 @@
           <a href=""><i class="ti-github"></i></a>
         </div>
       </div>
-      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+      </script>
     </body>
 </html>

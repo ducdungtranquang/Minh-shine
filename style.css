@@ -12,11 +12,12 @@ html,body{
     font-size: 22px;
     width: 100%;
     height: 100%;
+    background: linear-gradient(  #35a1e9,#66c2ff, #ffcccc, #ffeee6,#66c2ff,#35a1e9 );
 }
 
 /*hEADER*/
 .navbar{
-   position: relative;
+   
 }
 
 .container-fluid{
@@ -35,6 +36,10 @@ html,body{
 .nav-item:hover{
     background-color: tan;
     box-shadow: 2px violet;
+}
+
+.collapse:not(.show) {
+    display: block;
 }
 
 /*___SLIDER___*/
@@ -90,7 +95,7 @@ img, svg {
     text-align: center;
     position: absolute;
     bottom: 12%;
-    z-index: 1000;
+    z-index: 100;
     left: 50%;
     transform: translate(-50%);
     cursor: pointer;
@@ -145,6 +150,7 @@ img, svg {
     font-weight: bolder;
     text-transform: uppercase;
     display: block;
+    color: black;
 }
 
 /*____MAIN CONTENT___*/
@@ -158,14 +164,37 @@ img, svg {
     align-items: center;
     width: 80%;
     grid-gap: 100px;
-    border: solid #fff 3px;
+    border: solid #fff 1.8px;
     box-shadow: 2px 0px 2px 2px rgb(129, 113, 113);
+    background-color: white;
 }
 
 .main-content .img-content{
     width: 100%;
     height: 80%;
     display: block;
+    position: relative;
+}
+
+.img-content:hover:after{
+    display: block;
+    opacity: 1;
+    text-decoration: none;
+    line-height: 80px;
+    background-color: blanchedalmond;
+    content: 'Book Tour';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 42px;
+    color: black;
+    font-weight: 660;
+    padding: 2px 5px;
+}
+
+.img-content:hover img{
+    opacity: .55;
 }
 
 .main-content .img-content img{
@@ -180,6 +209,7 @@ img, svg {
     font-size: 18px;
     line-height: 23px;
     text-align: justify;
+    padding:0px 26px;
 }
 
 .describe-content h2{
@@ -219,6 +249,7 @@ img, svg {
     text-transform: uppercase;
     display: block;
     line-height: 200px;
+    color: black;
 }
 
 
@@ -237,7 +268,7 @@ img, svg {
     border-radius: 50%;
     width: 18%;
     height: 18%;
-    margin-top: 20px;
+    margin-top: 26px;
 }
 
 .describe-me{
@@ -266,7 +297,395 @@ img, svg {
 .icon a i{
     font-size: 43px;
     text-decoration: none;
+    color: blue;
 }
+
+
+
+
+
+
+/*____MEDIA QUERY___*/
+/*Pc*/
+@media screen  and (min-width:1024px){
+    
+}
+
+
+/*TABLET*/
+@media screen and (max-width:1023px) and (min-width : 720px){
+    .navbar-brand {
+        font-size: 40px !important;
+    }
+    .navbar-toggler{
+        font-size: 33px !important;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: rgba(0,0,0,.55);
+        font-size: 24px;
+    }
+
+    .slider{
+        height: 53%;
+    }
+
+    .content{
+        top: 140px;
+    }
+    .main-content{
+        top: 250px;
+        width: 100%;
+        box-shadow: 0px 0px 0px 0px transparent;
+        border: none;
+        margin-left: -14px;
+    }
+    .main-content .img-content img {
+        width: 100%;
+        object-fit: fill;
+        height: max-content;
+        margin-left: -18px;
+    }
+
+    .img-content:hover:after{
+        display: block;
+        opacity: 1;
+        text-decoration: none;
+        line-height: 62px;
+        background-color: blanchedalmond;
+        content: 'Book Tour';
+        position: absolute;
+        left: 48%;
+        top: 60%;
+        transform: translate(-50%, -50%);
+        font-size: 36px;
+        color: black;
+        font-weight: 660;
+        padding: 2px 3px;
+    }
+
+    .describe-content {
+        display: block;
+        font-size: 26px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .describe-content p {
+        font-size: 26px;
+        line-height: 32px;
+        text-align: center;
+        margin-top: 120px;
+    }
+    .describe-content div{
+        font-size: 60px;
+    }
+    .describe-img{
+        font-size: 38px;
+    }
+    .header-content h1{
+        font-size: 42px;
+    }
+    .header-about{
+        font-size: 42px;
+        margin-top: 30px;
+    }
+    .describe-content h2{
+        font-size: 40px;
+        margin-top: 88px;
+    }
+    .dot{
+        width: 35px;
+        height: 35px; 
+    }
+
+    .about-me {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        top: 200px;
+        background-color: #e9ecef;
+        box-shadow: 1.5px 1.5px 1.5px #adb5bd;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-me img{
+        margin-top: 55px;
+        width: 30%;
+    }
+    .describe-me{
+        margin-top: 30px;
+    }
+    .describe-me p{
+        font-size: 28px;
+        text-align: center;
+        margin-top: 0;
+    }
+    .footer {
+        position: relative;
+        top: 1280px;
+        height: 126px;
+    }
+    .icon a i {
+        font-size: 64px;
+        text-decoration: none;
+    }
+    
+    .bonus{
+        font-size: 22.6px;
+        padding-bottom: 14px;
+    }
+
+    .bonus h2{
+        font-size: 22.66px;
+    }
+
+}
+
+/*MOBILE*/
+@media  screen and (max-width:720px) {
+    .navbar-brand {
+        font-size: 36px !important;
+    }
+    .navbar-toggler{
+        font-size: 28px !important;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: rgba(0,0,0,.55);
+        font-size: 24px !important;
+    }
+
+    .slider{
+        height: 53%;
+    }
+
+    .content{
+        top: 140px;
+    }
+    .main-content{
+        top: 250px;
+        width: 100%;
+        box-shadow: 0px 0px 0px 0px transparent;
+        border: none;
+        margin-left: -9px;
+    }
+
+    .main-content .img-content img {
+        width: 100%;
+        object-fit: fill;
+        height: max-content;
+        margin-left: -18px;
+    }
+    
+    .img-content:hover:after{
+        display: block;
+        opacity: 1;
+        text-decoration: none;
+        line-height: 39px;
+        background-color: blanchedalmond;
+        content: 'Book Tour';
+        position: absolute;
+        left: 48%;
+        top: 60%;
+        transform: translate(-50%, -50%);
+        font-size: 22.5px;
+        color: black;
+        font-weight: 660;
+        padding: 2px 3px;
+    }
+
+    .describe-content {
+        display: block;
+        font-size: 22.5px;
+        line-height: 23pxpx;
+        text-align: center;
+    }
+
+    .describe-content p {
+        font-size: 22.5px;
+        line-height: 24px;
+        text-align: center;
+        margin-top:20px;
+    }
+    .describe-content div{
+        font-size: 50px;
+    }
+    .describe-img{
+        font-size: 26px;
+    }
+    .header-content h1{
+        font-size: 30px;
+    }
+    .header-about{
+        font-size: 40px;
+    }
+    .describe-content h2{
+        font-size: 45px;
+        margin-top: 80px;
+        font-size: 31px;
+    }
+    .dot{
+        width: 30px;
+        height: 30px; 
+    }
+
+    .about-me {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        top: 200px;
+        background-color: #e9ecef;
+        box-shadow: 1.5px 1.5px 1.5px #adb5bd;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-me img{
+        margin-top: 55px;
+        width: 30%;
+    }
+    .describe-me{
+        margin-top: 30px;
+    }
+    .describe-me p{
+        font-size: 20.5px;
+        text-align: center;
+        margin-top: 0;
+    }
+    .footer {
+        position: relative;
+        top: 1120px;
+        height: 126px;
+    }
+    .icon a i {
+        font-size: 43px;
+        text-decoration: none;
+    }
+    .bonus{
+        font-size: 18.6px;
+        padding-bottom: 10px;
+    }
+
+    .bonus h2{
+        font-size: 18.7px;
+    }
+    
+
+}
+    
+
+
+
+
+.describe-content h2{
+    
+}
+
+@keyframes fadeUp{
+    0%{
+        opacity: .5;
+        width: 100%;
+        color: blue;
+    }
+    100%{
+        opacity: 1;
+        width: 100%;
+        color: red;
+    }
+}
+
+/*___ANIMATION___
+@-webkit-keyframes flip {
+    from {
+      -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+      transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+  
+    40% {
+      -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+        rotate3d(0, 1, 0, -190deg);
+      transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+        rotate3d(0, 1, 0, -190deg);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+  
+    50% {
+      -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+        rotate3d(0, 1, 0, -170deg);
+      transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+        rotate3d(0, 1, 0, -170deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    80% {
+      -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+        rotate3d(0, 1, 0, 0deg);
+      transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+        rotate3d(0, 1, 0, 0deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    to {
+      -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+      transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  }
+  @keyframes flip {
+    from {
+      -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+      transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+      color: red;
+    }
+  
+    40% {
+      -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+        rotate3d(0, 1, 0, -190deg);
+      transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+        rotate3d(0, 1, 0, -190deg);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+      color: orangered;
+    }
+  
+    50% {
+      -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+        rotate3d(0, 1, 0, -170deg);
+      transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+        rotate3d(0, 1, 0, -170deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      color: blanchedalmond;
+    }
+  
+  
+    to {
+      -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+      transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      color: blanchedalmond;
+    }
+  }
+  .animate__animated.animate__flip {
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    -webkit-animation-name: flip;
+    animation-name: flip;
+    animation-duration: 1.65s;
+  }
+  */
 
 
 
